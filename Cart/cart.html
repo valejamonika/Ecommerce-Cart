@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style type="text/css">
+    body
+      {
+       margin: 0px;
+       padding: 0px;
+       background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+       justify-content: center;
+       align-items: center;
+      }
+      .cart
+      {
+       width: 70%;
+       height: 80%;
+       background-color: #ffffff;
+       border-radius: 20px;
+       box-shadow: 0px 25px 40px #1687d933;
+       border: 2px solid red;
+       margin: 150px 300px;
+      }
+      
+      .header
+      {
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+      }
+      .remove
+      {
+
+        color: Red;
+        text-decoration: underline;
+      }
+      .item1
+      {
+        height:40%;
+        width:100%;
+
+       
+      }
+      .pic
+      {
+        display: flex;
+        justify-content:baseline;
+        align-items: center;
+      }
+      img
+      {
+        margin-left: 30px;
+      }
+     .rate
+     {
+      height: 50px;
+      width: 450px;
+      margin-left: 200px;
+      margin-top: -20px;
+      display: flex;
+      justify-content:baseline;
+
+      
+     }
+    s{
+      color: gray;
+      font-size: 20px;
+    }
+    b{
+      font-size: 25px;
+    }
+    h4
+    {
+      color: green;
+    }
+    .counter{
+ width: 15%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ float: right;
+ margin-top: -100px;
+ margin-right: 50px;
+}
+.btn{
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background-color: #d9d9d9;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 20px;
+
+ font-weight: 900;
+ color: #202020;
+ cursor: pointer;
+}
+.count{
+ font-size: 20px;
+ font-weight: 900;
+ color: #202020;
+}
+
+#btn-order{
+  margin-left: 400px;
+  height: 50px;
+  width: 150px;
+  margin-bottom: 10px;
+  background-color: orange;
+  box-shadow: 3px 3px red;
+  font-size: 20px;
+}
+#btn-order:hover
+{
+  background-color: transparent;
+  width: 200px;
+  border: 3px solid magenta;
+
+}
+  
+  </style>
+</head>
+<body>
+    <div class="cart">
+        <div class="header">
+          <h3 class="heading" style="color:blue; margin-left: 10px;">Flipkart</h3>
+         <h3 class="remove">Remove all</h3>
+        </div>
+        <div class="cartitems">
+          <div class="item1">
+            <div class="pic">
+              <img src="1.jpg" height="100px" width="100px">
+              <h2>Apple iPhone 11 (64 GB, Black)</h3>
+            </div>
+            <div class="rate">
+              <s>₹ 41,4999</s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>₹ 40,0000</b>
+             </div>
+             <div class="counter">
+               <div class="btn">+</div>
+               <div class="count">1</div>
+               <div class="btn">-</div>
+              </div>
+          <div class="item2">
+            <div class="cartitems">
+          <div class="item1">
+            <div class="pic">
+              <img src="2.jfif" height="100px" width="120px">
+              <h2>OPPO K10 5G (Ocean Blue, 128 GB)  (8 GB RAM)</h3>
+            </div>
+            <div class="rate">
+              <s>₹ 25,999</s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>₹17,499</b>
+             </div>
+             <div class="counter">
+               <div class="btn">+</div>
+               <div class="count">2</div>
+               <div class="btn">-</div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="order">
+      <input type="button" name="" value="Place Order" id="btn-order">
+    </div>
+</body>
+</html>
